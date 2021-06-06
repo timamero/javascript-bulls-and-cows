@@ -38,6 +38,16 @@ body {
     
 }
 
+a {
+  color: #865819;
+  transition: all 0.2s linear;
+}
+
+a:hover {
+  color: white;
+  background-color: #865819;
+}
+
 button {
   cursor: pointer;
 }
