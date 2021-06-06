@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bull and Cows</title>
+</head>
+<body>
+    <div class="grid">
+        <nav class="sidenav">
+            <button class="sidenav__btn instructions-btn">Instructions</button>
+            <button class="sidenav__btn new-game-btn">New Game</button>
+            <button class="sidenav__btn about-btn">About</button>
+        </nav>
+
+        <div class="game">
+            <h1 class="game__header">Bulls and Cows</h1>
+            <form class="game__form">
+                <label for="guessfield">Enter guess: </label>
+                <input type="text" id="guessfield" class="game__guessfield-input">
+                
+            </form>
+            <input type="submit" value="Submit guess" class="game__guesssubmit-btn">
+            <div class="game__message"></div>
+        </div>
+
+        <div class="results">       
+            <p class="results__guesscountdown"></p>   
+            <p>Previous Guesses:</p>       
+            <div class="results__history">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="popup instructions">
+        <div class="popup__btn-wrapper">
+        <button class="popup__btn" id="instructions-close-btn">
+            <img class="popup__close" src="images/remove-button.svg" alt="">
+        </button>
+        </div>
+        
+        <h2>Instructions</h2>
+        <div class="popup-wrapper">
+            <p>You have 20 turns to guess the four digit code.</p>
+            <p>Each bull you get is a correct number in the correct position.</p>
+            <p>Each cow you get is a correct number in the wrong position.</p>
+            <p>Learn more about the bulls and cows guessing game</p>
+        </div>
+    </div>
+
+    <div class="popup about">
+        <div class="popup__btn-wrapper">
+        <button class="popup__btn" id="about-close-btn">
+            <img class="popup__close" src="images/remove-button.svg" alt="">
+        </button>
+        </div>
+        
+        <h2>About</h2>
+        <div class="popup-wrapper">
+            <p>This website was created with JavaScript, HTML, and CSS.</p>
+            <p><a href="#">See the source code here.</a></p>
+            <p class="attribution">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

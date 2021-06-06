@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /* Remove default padding and margin */
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /* Remove default padding and margin */
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+button {
+  cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 200px minmax(400px, auto) 400px;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+}
+
+.sidenav__btn {
+  margin: 8px;
+  height: 40px;
+  background-color: grey;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s linear;
+}
+
+.sidenav__btn:hover {
+  transform: scale(1.05);
+}
+
+.game {
+  display: grid;
+  grid-template-rows: 100px 100px 100px auto;
+  justify-items: center;
+  text-align: center;
+}
+
+.game__header {
+  padding: 24px;
+  font-size: 3rem;
+}
+
+.game__form {
+  align-self: center;
+  font-size: 1.5rem;
+}
+
+.game__guessfield-input {
+  font-size: 1.2rem;
+}
+
+.game__guesssubmit-btn {
+  align-self: center;
+  cursor: pointer;
+  margin: 16px;
+  height: 40px;
+  width: 200px;
+  border: none;
+  background-color:lightgreen;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  transition: all 0.3s linear;
+}
+
+/* .game__guesssubmit-btn-active {
+
+} */
+
+.game__guesssubmit-btn:hover {
+  transform: scale(1.1);
+}
+
+/* .disabled-btn {
+  transform: scale(0);
+} */
+
+.disabled-btn:hover {
+  cursor:not-allowed;
+  transform: scale(1);
+}
+
+
+.game__message {
+  height: 100%;
+  width: 100%;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:lightskyblue;
+  font-size: 1.75rem;
+}
+
+.winning-message, .current-guess {
+  margin-bottom: 4px;
+}
+
+.game__message .results__img {
+  height: 60px;
+  padding: 0 16px;
+}
+
+.game__message .results__img-wrapper {
+  width: auto;
+}
+
+.results {
+  display: grid;
+  grid-template-rows: 20% 10% 70%;
+  background-color:lightgrey;
+  border: 5px solid black;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.results__guesscountdown {
+  margin: 16px;
+}
+
+.results__img {
+    height: 30px;
+    padding: 0 4px;
+}
+
+.results__history {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: auto;
+}
+
+.results__previousguess-wrapper {
+  margin: 4px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.results__previousguess {
+  width: 100px;
+}
+
+.results__img-wrapper {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 70vh;
+  width: 0;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: none;
+  text-align: center;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.popup h2 {
+  font-size: 2rem;
+}
+
+.popup p {
+  margin: 4px;
+  font-size: 1.2rem;
+}
+
+.popup__btn-wrapper {
+  align-self: flex-end;
+  height: max-content;
+}
+
+.popup__btn {
+  cursor: pointer;
+  margin: 4px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.popup__close {
+  width: 50px;
+}
+
+
+
+.popup-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.show-instructions{
+  width: 60vw;
+  border: 5px solid black;
+}
+
+.show-about{
+  width: 60vw;
+  border: 5px solid black;
+}
