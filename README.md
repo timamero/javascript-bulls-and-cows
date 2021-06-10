@@ -1,7 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/dd2740e2-56d6-461b-9584-4f33b195b67e/deploy-status)](https://app.netlify.com/sites/js-bulls-and-cows/deploys) 
 
 # Bulls and Cows Guessing Game
-Bulls and cows is a code breaking guessing game. [Learn more about it here](https://en.wikipedia.org/wiki/Bulls_and_Cows)
+Bulls and cows is a code breaking guessing game. [Learn more about it here](https://en.wikipedia.org/wiki/Bulls_and_Cows).
 
 [Demo the site here](https://js-bulls-and-cows.netlify.app/)
 
