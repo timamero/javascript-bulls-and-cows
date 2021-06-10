@@ -59,7 +59,7 @@ function checkGuess() {
 
         // Check user's guess matches the number to guess
         if (userGuess == numberToGuess.join('')) {
-            resultsGuessCountDown.textContent = `You got the correct number with ${maxGuesses} guesses remaining`
+            resultsGuessCountDown.textContent = `You got the correct number with ${guessCountDown - 1} guesses remaining`
             let winningDisplay = `<p class="winning-message">${userGuess} is correct! </p><div class="results__img-wrapper">`
             for (let i = 0; i < 4; i++) {
                 winningDisplay += '<img class="results__img" src="images/bull.svg" alt="Image of Bull"/>'
